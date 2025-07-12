@@ -26,6 +26,7 @@ public class CustomerController {
     @GetMapping("/bikes")
     public ResponseEntity<List<BikeDto>> getAllBikes(){
         List<BikeDto> bikeDtoList = customerService.getAllBikes();
+	System.out.println("ok");
         return ResponseEntity.ok(bikeDtoList);
     }
     // get car by id
